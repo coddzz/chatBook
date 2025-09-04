@@ -1,9 +1,13 @@
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
 
 const App = () =>{
-  return(
-    <div>
-      <h1>First App!</h1>
+  return (
+    <div className="flex max-w-6xl mx-auto">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </div>
-  )
+  );
 }
 export default App;
